@@ -1,3 +1,0 @@
-- name: Install yum OpenJDK
-  yum: name=java-1.7.0-openjdk state=present
-  when: not skip_install

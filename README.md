@@ -14,14 +14,18 @@ The variable are required for proper setup
 - storm_cluster_logback_xml - the path to the local copy of a custom logback configuration file (you can copy it to the machine in a pre-task) to override the default storm logging with. If this variable is omitted, the default storm logback config will be used.
 
 ## Optional
-- monasca_log_level - Log level to be used for storm logs. Defaults to WARN
-- monasca_wait_for_period - The time in seconds for how long to wait for the nimbus port and the ui port to be available after starting them. Default is 60 seconds.
+- storm_log_level - Log level to be used for storm logs. Defaults to WARN
+- storm_wait_for_period - The time in seconds for how long to wait for the nimbus port and the ui port to be available after starting them. Default is 60 seconds.
 - run_mode: One of Deploy, Stop, Install, Configure or Start. The default is Deploy which will do Install, Configure, then Start.
+
+##Credits
+
+This role is a fork of https://github.com/hpcloud-mon/ansible-storm and was created because I didn't want openjdk or any other dependency installed by the storm role
 
 ##License
 Apache
 
 ##Author Information
-Tim Kuhlman
+Leonardo Bueno
 
-Monasca Team email monasca@lists.launchpad.net
+leonardo.bueno@gmail.com

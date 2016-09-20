@@ -1,8 +1,8 @@
 ---
 galaxy_info:
-  author: Tim Kuhlman
+  author: Leonardo Bueno
   description: Installs Apache Storm
-  company: HP
+  company: Infobase
   license: Apache
   min_ansible_version: 1.7
   platforms:
